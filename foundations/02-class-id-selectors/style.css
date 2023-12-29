@@ -1,0 +1,19 @@
+.paragraph {
+    background-color: rgb(255, 128, 184);
+    font-family: 'Verdana', 'DejaVu Sans', sans-serif;
+}
+
+.large {
+    font-size: 24px;
+}
+
+#div-first {
+    color: rgb(0, 64, 255);
+    font-size: 36px;
+}
+
+#div-second {
+    background-color: rgb(64, 255, 128);
+    font-size: 24px;
+    font-weight: bold;
+}
