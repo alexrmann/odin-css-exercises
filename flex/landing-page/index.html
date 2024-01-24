@@ -6,21 +6,24 @@
     <title>Awesome Website</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
+
   <body>
     <header>
-      <div class="logo">Header Logo</div>
-      <nav class="nav">
-        <ul class="nav--list">
-          <li class="nav--item">header link one</li>
-          <li class="nav--item">header link two</li>
-          <li class="nav--item">header link three</li>
-        </ul>
-      </nav>
+      <div class="container flex flex--nav">
+        <div class="logo">Header Logo</div>
+        <nav class="nav">
+          <ul class="nav--list">
+            <li class="nav--item">header link one</li>
+            <li class="nav--item">header link two</li>
+            <li class="nav--item">header link three</li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <main>
-      <div class="container">
-        <div class="hero">
+      <section class="hero">
+        <div class="container flex flex--hero">
           <div class="hero--text">
             <h1>This website is awesome</h1>
             <p>
@@ -29,17 +32,19 @@
             </p>
             <button class="hero--btn-signup">Sign up</button>
           </div>
-          <div class="img-placeholder">
-            <div class="img-placeholder--text">
+          <div class="hero--img flex">
+            <div class="hero--img-text">
               this is a placeholder for an image
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="features">
+      <section class="features">
+        <div class="container flex flex--column">
           <h2>Some random information</h2>
 
-          <div class="container">
+          <div class="items flex flex--row">
             <div class="item">
               <div class="item--img"></div>
               <p class="item--desc">
@@ -66,8 +71,10 @@
             </div>
           </div>
         </div>
+      </section>
 
-        <div class="quote">
+      <section class="quote">
+        <div class="container flex">
           <figure>
             <blockquote cite="Thor, God of Thunder">
               This is an inspiring quote, or a testimonial from a customer.
@@ -77,9 +84,11 @@
             <figcaption>—Thor, God of Thunder</figcaption>
           </figure>
         </div>
+      </section>
 
-        <div class="cta">
-          <div class="cta--box">
+      <section class="cta">
+        <div class="container">
+          <div class="cta--box flex">
             <div>
               <h2>Call to action! It's time!</h2>
               <p>
@@ -92,11 +101,13 @@
             </div>
           </div>
         </div>
-      </div>
+      </section>
     </main>
 
     <footer>
-      <div>Copyright © The Odin Project 2021</div>
+      <div class="container flex">
+        <div>Copyright © The Odin Project 2021</div>
+      </div>
     </footer>
   </body>
 </html>
